@@ -200,6 +200,7 @@ $.fn.calendar = function(){
        $(e.target).attr("disabled","");
        var currentDate = $(e.target).attr("value").split("-");
        if ( checkCalendarCount() ){
+         $("div.calendar").remove();
          createCalendar( e.target );
        }
 
